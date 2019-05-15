@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const router = Router();
 const controller = require('./controller');
-router.get('/', controller.showIndex );
+router.get('/', controller.Index );
 
 router.get('/contacts', controller.showContacts);
 router.get('/usage', controller.showUsage);

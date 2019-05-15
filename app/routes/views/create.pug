@@ -15,13 +15,11 @@ block content
           input(class = 'input InputItemWarmElem' type = 'text' name = 'ItemWarmElem' placeholder = 'Вид нагревательного элемента')
           input(class = 'input InputItemSize' type = 'text' name = 'ItemSize' placeholder = 'Размер(ш*д*г)')
           input(class = 'input InputItemWeight' type = 'text' name = 'ItemWeight' placeholder = 'Вес')
-          input(class = 'ItemAvailable' name = "ItemAvailable" type = "checkbox")
-          span.checkBoxStyle  Наличие на складе
           br
           div.file-load-block
               input#itemImage(type='file')
               div.fileLoad
-                input(type='text' class = "input" value='Выберите изображение...')
+                input(type='button' class = "input" value='Выберите изображение...')
                 input(type='text' name = "itemImage" id = "Base64Code")
           br
           button.buttonSubmit(type='submit') Создать  

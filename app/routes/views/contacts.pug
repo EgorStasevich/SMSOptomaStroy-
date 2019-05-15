@@ -1,4 +1,24 @@
 extends /layout.pug
 block content
-    div
-      p Контакты
+    div(class="content")
+      div(class="container")
+        div(class="wrap")
+          div(class="fix-10-12")
+            h1(class="ae-1 fromLeft") 10 минут от станции метро Первоймаская
+              div(class="fix-12-12 margin-top-5")
+                ul(class="grid grid-65 fixedSpaces equal equalMobile")
+                  li(class="col-8-12")
+                    div(class="gmap_canvas hideForPhablet")
+                    iframe(src="https://yandex.by/map-widget/v1/-/CBB6aNC0SB" width="600" height="350" frameborder="1" allowfullscreen="true")
+                  li(class="col-4-12")
+                      div(class="cell-65 left ae-2 margin-top-4")
+                      h3 Адрес
+                        p(class="small">Белорусская 41, офис 14, 2 этаж)
+                          div(class="cell-65 left ae-3")
+                          h3 Телефон
+                      div(class="cell-65 left ae-3")
+                        h3 Время работы
+                          p(class="small">Вторник - Воскресение)
+                          p(class="small">c 10:00 до 00:00)
+
+  
