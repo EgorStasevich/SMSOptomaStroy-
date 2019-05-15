@@ -33,8 +33,8 @@ module.exports = {
   showContacts: (req, res) => {
     res.render('routes/views/contacts');
   },
-  showUsage: (req, res) => {
-    res.render('routes/views/usage');
-  },
+  showAccount: (req, res) => {
+    res.render('routes/views/account');
+  }
 
 }
