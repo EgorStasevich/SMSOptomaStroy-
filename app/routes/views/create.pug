@@ -1,0 +1,34 @@
+extends /layout.pug
+block content
+    form(method = 'POST')
+      div.createForm
+          input(class = 'input InputItemName' type = 'text' name = 'ItemName' placeholder = 'Название товара')
+          input(class = 'input InputItemShortDescription' type = 'text' name = 'ItemShortDescription' placeholder = 'Краткое описание') 
+          input(class = 'input InputItemType' type = 'text' name = 'ItemType' placeholder = 'Тип')
+          input(class = 'input InputItemPrice' type = 'text' name = 'ItemPrice' placeholder = 'Цена (б.р.)')
+          input(class = 'input InputItemCapacity' type = 'text' name = 'ItemCapacity' placeholder = 'Мощность(Ватт)')
+          input(class = 'input InputItemColor' type = 'text' name = 'ItemColor' placeholder = 'Цвет')
+          input(class = 'input InputItemMaterial' type = 'text' name = 'ItemMaterial' placeholder = 'Материал покрытия')
+          input(class = 'input InputItemWarmTime' type = 'text' name = 'ItemWarmTime' placeholder = 'Время разогрева')
+          input(class = 'input InputItemTemp' type = 'text' name = 'ItemTemp' placeholder = 'Температура поверхности')
+          input(class = 'input InputItemArea' type = 'text' name = 'ItemArea' placeholder = 'Площадь обогрева(м2)')
+          input(class = 'input InputItemWarmElem' type = 'text' name = 'ItemWarmElem' placeholder = 'Вид нагревательного элемента')
+          input(class = 'input InputItemSize' type = 'text' name = 'ItemSize' placeholder = 'Размер(ш*д*г)')
+          input(class = 'input InputItemWeight' type = 'text' name = 'ItemWeight' placeholder = 'Вес')
+          input(class = 'ItemAvailable' name = "ItemAvailable" type = "checkbox")
+          span.checkBoxStyle  Наличие на складе
+          br
+          div.file-load-block
+              input#itemImage(type='file')
+              div.fileLoad
+                input(type='text' class = "input" value='Выберите изображение...')
+                input(type='text' name = "itemImage" id = "Base64Code")
+          br
+          button.buttonSubmit(type='submit') Создать  
+          button(class ="buttonSubmit cancelButton" id = "cancelCreateButton") Отмена  
+
+        
+        
+        
+        
+      

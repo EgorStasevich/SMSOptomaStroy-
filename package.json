@@ -1,0 +1,30 @@
+{
+  "name": "diplom",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "git": "^0.1.5",
+    "jquery": "^3.4.1",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.7",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th0rd/diplom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Th0rd/diplom/issues"
+  },
+  "homepage": "https://github.com/Th0rd/diplom#readme",
+  "description": ""
+}

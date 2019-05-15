@@ -1,0 +1,34 @@
+extends /layout.pug
+block content
+  div(class = "Modal" id = "BuyModal")
+   div.Modal-wrapper
+    div.BuyModal-inner
+      div.Modal-header
+        h3.Modal-title Товар добавлен в корзину
+      div.Modal-text
+        a(class = "ModalButton buyModalBtn" href = "#OrderModal") Заказать
+        a(class = "ModalButton" href = "#close") Отмена
+        
+  div(class = "Modal" id = "OrderModal")
+    div.Modal-wrapper
+      div.OrderModal-inner
+        div.Modal-header
+          h3.Modal-title Оформление заказа
+        div.Modal-text
+            input(class = "ModalInpt" placeholder = "Имя")
+            input(class = "ModalInpt" placeholder = "Город")
+            input(class = "ModalInpt" placeholder = "Телефон")
+            a(class = "ModalButton buyModalBtn") Заказать
+            a(class = "ModalButton closeModal" href = "#close") Отмена
+          
+  div(class = "container")
+    for item in items
+      div.item
+        img(src= item.itemImage, alt='image')
+        - var url = item._id;
+        p
+          a(href= '/'+ url class ="itemNameP" )=  item.ItemName
+        p(class = "price")= item.ItemPrice
+        p(class = "descr")= item.ItemShortDescription
+        a(class = "buyButton" id = "buyButton" href = "#BuyModal") Купить
+        
