@@ -35,6 +35,9 @@ module.exports = {
   },
   showAccount: (req, res) => {
     res.render('routes/views/account');
-  }
+  },
+  showUsage: (req, res) => {
+    res.render('routes/views/usage');
+  },
 
 }
