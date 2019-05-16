@@ -16,6 +16,14 @@ module.exports = {
     const db = client.db('AsiaOpt');
     const collection = db.collection('Items');
     await collection.insertOne(item);
+
+  },
+  loginPOST: async (req, res) =>{
+    const login = req.body;
+    const client = req.app.client;
+    const db = client.db('AsiaOpt');
+    const collection = db.collection('Login');
+    await collection.insertOne(login);
     res.redirect('/');
 
   },
@@ -33,8 +41,8 @@ module.exports = {
   showContacts: (req, res) => {
     res.render('routes/views/contacts');
   },
-  showAccount: (req, res) => {
-    res.render('routes/views/account');
+  showlogin: (req, res) => {
+    res.render('routes/views/login');
   },
   showUsage: (req, res) => {
     res.render('routes/views/usage');

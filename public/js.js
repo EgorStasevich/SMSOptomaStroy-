@@ -17,8 +17,8 @@ window.onload = function() {
   document.getElementById('catalog').onclick = function() {
     window.location.href = getBaseUrl() + "catalog";
   }
-  document.getElementById('account').onclick = function() {
-    window.location.href = getBaseUrl() + "account";
+  document.getElementById('login').onclick = function() {
+    window.location.href = getBaseUrl() + "login";
   }
   document.getElementById('contacts').onclick = function() {
     window.location.href = getBaseUrl() + "contacts";

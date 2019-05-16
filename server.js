@@ -11,4 +11,3 @@ server.use(bodyParser.json());
 server.use(bodyParser({limit: '5mb'}));
 server.use(app);
 server.listen(3000, 'localhost', () => console.log("Сервер запущен"));
-
